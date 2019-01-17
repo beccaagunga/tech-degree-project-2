@@ -1,0 +1,405 @@
+/* Global Layout Set-up */
+
+* {
+  box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
+}
+
+body {
+  width: 100%;
+  background-color: #eee;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/**** HEADER ****/
+
+header {
+  background-color: #eee;
+  margin-bottom: 2rem;
+}
+
+header img {
+  width: 50%;
+  margin-top: 1rem;
+}
+
+header.container {
+    padding-top: 2rem;
+    margin-bottom: 0;
+}
+
+header h1 {
+  font-size: 1.7rem;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+p {
+  margin: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  padding: 0 1rem;
+}
+
+img {
+  width: 90%;
+}
+
+.name {
+  color: #32a7cc;
+}
+
+/* NAV STYLING  */
+header nav {
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav li {
+    margin-bottom: .5rem;
+    padding: 25px;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+header nav a {
+  padding: 40px;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  color: #32a7cc;
+}
+
+/* MAIN */
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+main h3 {
+  margin-top: 0;
+  margin-bottom: 2rem;
+}
+
+main.container {
+  margin-bottom: 10px;
+}
+
+.experience {
+  clear: both;
+  padding-top: 2rem;
+  width: 80%;
+  margin-top: 0;
+}
+
+.experience p {
+  font-size: 1rem;
+}
+
+/* FOOTER */
+
+footer.container {
+  margin-top: 0;
+  margin-bottom: 2rem;
+  padding-top: 0;
+  padding-bottom: 2rem;
+}
+
+.contact {
+  border-bottom: 1px solid lightgray;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  width: 80%;
+}
+
+.contact p {
+  font-size: 1rem;
+}
+
+.footer-nav {
+  position: relative;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+#name-footer {
+  position: relative;
+  font-weight: bold;
+  padding-bottom: 2rem;
+  color: #32a7cc;
+}
+
+.nav-footer {
+  display: none;
+}
+
+/*  MEDIA QUERY 768 TABLET */
+
+@media (min-width: 768px) {
+
+  header.container {
+    margin-bottom: 1rem;
+  }
+
+  header nav {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  header ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  header nav li {
+    margin-bottom: .5rem;
+    margin-right: -.5rem;
+    padding: .7rem 1rem;
+    background-color: #eee;
+    display: inline-block;
+  }
+
+  header img {
+    float: right;
+    width: 50%;
+    padding: 0 2rem;
+    max-width: 420px;
+  }
+
+  header p {
+    margin-bottom: 8rem;
+  }
+
+  main.container {
+    float: left;
+  }
+
+  .project-1,
+  .project-2,
+  .project-3,
+  .project-4,
+  .project-5,
+  .project-6 {
+    width: 50%;
+    float: left;
+    padding: 0;
+    margin: 0;
+  }
+
+  .contact {
+    padding: 5rem 10rem;
+  }
+
+  .experience h2 {
+    margin-top: 5rem;
+  }
+
+  .experience p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: auto;
+  }
+
+  .footer-nav {
+    position: relative;
+    padding-top: 2rem;
+  }
+
+  #name-footer {
+    position: absolute;
+    top:  1rem;
+    left: 7rem;
+  }
+
+  #back-to-top {
+    display: none;
+  }
+  .nav-footer {
+      position: absolute;
+      top: .5rem;
+      right: 6rem;
+      font-weight: bold;
+      display: inline-block;
+  }
+
+  .nav-footer ul {
+      list-style: none inside;
+      padding: 0;
+      display: inline-block;
+      margin: 0;
+  }
+
+  .nav-footer li {
+      margin-bottom: .5rem;
+      margin-right: 1rem;
+      padding: .7rem .2rem;
+      background-color: #eee;
+      display: inline-block;
+  }
+
+  footer.container {
+    clear: both;
+  }
+
+  .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+ }
+
+ /*  MEDIA QUERY 1024 DESKTOP */
+
+ @media (min-width: 1024px) {
+
+ header.container {
+  float: left;
+  margin-bottom: 1rem;
+ }
+
+ header nav {
+   margin-left: auto;
+   margin-right: auto;
+   float: right;
+   width: 70%;
+ }
+
+ header ul {
+   list-style: none;
+   padding: 0;
+   margin-top: 0;
+   padding-left: 10rem;
+ }
+
+ header nav li {
+   margin-bottom: .5rem;
+   margin-right: -2rem;
+   padding: .7rem 1rem;
+   background-color: #eee;
+   display: inline-block;
+   text-align: left;
+ }
+
+  header h1 {
+    font-size: 1.7rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    padding-left: 5rem;
+    float: left;
+  }
+
+  header p {
+    margin-left: 4rem;
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-left: 0;
+    padding-top: 5rem;
+  }
+
+ header img {
+   float: right;
+   width: 100%;
+   padding-right: 1rem;
+   max-width: 500px;
+ }
+
+ main.container {
+   margin: 0 2.5rem;
+   padding-left: 1.5rem;
+   padding-right: 1.5rem;
+   padding-top: 3rem;
+ }
+
+main h2 {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+main p {
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+ .project-1,
+ .project-2,
+ .project-3,
+ .project-4,
+ .project-5,
+ .project-6 {
+   width: 33%;
+   float: left;
+   padding: 1rem 0;
+ }
+
+ .experience {
+    clear: both;
+    padding-top: 80rem;
+    padding: .5rem 2rem;
+  }
+
+ .contact {
+   padding: .5rem 5rem;
+ }
+
+
+ #name-footer {
+   position: absolute;
+   top:  1.2rem;
+   left: 3.2rem;
+   font-weight: bold;
+ }
+
+ #back-to-top {
+   display: none;
+ }
+ .nav-footer {
+     position: absolute;
+     top: .5rem;
+     right: 2rem;
+     font-weight: bold;
+     display: inline-block;
+ }
+
+footer.container {
+  clear: both;
+}
+
+ .clearfix:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
+}
